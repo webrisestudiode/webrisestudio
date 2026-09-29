@@ -1560,3 +1560,42 @@ p { text-wrap: pretty; }
   transition: top .18s ease;
 }
 .spring-link:focus { top: 12px; }
+
+/* ── Große Bildschirme: die Seite wächst mit ──────────────────
+   Bis 1499px bleibt alles exakt wie bisher (Handy und Laptop
+   unverändert). Darüber wuchs früher nur die leere Fläche links,
+   weil der Inhalt bei 1180px stehenblieb – auf einem 3440er
+   Monitor waren das 1170px Weißraum. Jetzt wächst die Breite mit.
+   Schrift und Held-Grafik wachsen im gleichen Verhältnis mit,
+   sonst wirkt beides auf großen Monitoren zu klein.
+   Reihenfolge beachten: .schild zuerst, danach seine Fassungen –
+   gleiche Stärke, die spätere Regel gewinnt.                     */
+@media (min-width: 1500px) {
+  :root { --breite: 90vw; }
+
+  h1 { font-size: clamp(4rem, 3.4vw, 5.6rem); }
+  h2 { font-size: clamp(2.9rem, 2.4vw, 4rem); }
+  .fuehrung { font-size: clamp(1.25rem, .92vw, 1.6rem); }
+
+  .held--geteilt .schild { max-width: min(26vw, 520px); }
+  .held--geteilt .schild--gross { max-width: min(30vw, 640px); }
+  .held--geteilt .schild--mit-belegen { max-width: min(28vw, 560px); }
+
+  .kreis-zeile { font-size: clamp(1.02rem, .78vw, 1.35rem); }
+  .schild-belege li { font-size: clamp(.96rem, .72vw, 1.25rem); }
+
+  /* Reine Lese-Abschnitte (Fragen, Rechtstexte, Hinweiskasten) wachsen
+     NICHT mit: ein 800px-Textblock in einer 2300px-Hülle lässt rechts
+     eine riesige leere Fläche stehen. Sie behalten die bisherige Hülle
+     und sehen damit genauso aus wie bisher. Kann ein alter Browser
+     :has() nicht, bleibt einfach die breite Hülle – nichts bricht.     */
+  .band:has(> .huelle > .fragen) > .huelle,
+  .band:has(> .huelle > .rechtstext) > .huelle,
+  .band:has(> .huelle > .hinweis-block) > .huelle,
+  .band:has(> .huelle > .leistungen) > .huelle,
+  .band:has(> .huelle > .problem-raster) > .huelle { max-width: 1180px; }
+
+  /* Kopfbereiche ohne zweite Spalte (z. B. Kontaktseite) ebenso:
+     sonst klebt die Überschrift ganz links und rechts steht nichts. */
+  .held:not(:has(.held-raster)) > .huelle { max-width: 1180px; }
+}
