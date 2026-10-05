@@ -1,9 +1,12 @@
 # Webrise Studio
 
 > Webrise Studio richtet für kleine Betriebe in der Region Crailsheim und
-> Schwäbisch Hall (Baden-Württemberg, Deutschland) digitale Helfer ein:
-> einen Telefon-Assistenten, der Anrufe annimmt, einen WhatsApp-Assistenten,
-> der schriftliche Anfragen beantwortet, und Websites, mit denen man
+> Schwäbisch Hall (Baden-Württemberg, Deutschland) digitale Helfer ein.
+> Zwei gleichwertige Zielgruppen: Arzt-, Zahnarzt- und Physiotherapiepraxen
+> sowie Handwerksbetriebe und Kfz-Werkstätten. Für Praxen der
+> Telefon-Assistent für die Anmeldung und eine Praxis-Website; für Handwerk
+> zusätzlich ein WhatsApp-Assistent. Der Telefon-Assistent nimmt Anrufe an,
+> notiert das Anliegen und bucht Termine; Websites sorgen dafür, dass man
 > gefunden wird. Zwei Ansprechpartner: Ahad Habib (Gründer) und
 > Florian Ludwig (Partner). Einstieg immer über ein kostenloses
 > Erstgespräch von fünfzehn Minuten.
@@ -19,10 +22,11 @@
   Betrieb.
 - [Websites](https://webrisestudio.de/websites/): Websites für Handwerk,
   Werkstatt und Praxis, auf dem Handy gebaut, mit optionalem Berater.
+- [Für Arzt- und Zahnarztpraxen](https://webrisestudio.de/praxen/):
+  Telefon-Assistent für die Anmeldung und Praxis-Website, ohne WhatsApp.
+  Auch für Physiotherapiepraxen.
 - [Für Handwerk und Werkstatt](https://webrisestudio.de/handwerker/):
   Telefon-Assistent, WhatsApp-Assistent und Website für Handwerksbetriebe.
-- [Für Arzt- und Zahnarztpraxen](https://webrisestudio.de/praxen/):
-  Telefon-Assistent und Praxis-Website, ohne WhatsApp.
 - [Kontakt](https://webrisestudio.de/kontakt/): Telefon, E-Mail,
   Terminbuchung über cal.com.
 - [Impressum](https://webrisestudio.de/impressum/)
